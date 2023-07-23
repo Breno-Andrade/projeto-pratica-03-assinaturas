@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-.header__title{
+.header__logo{
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 2px;
@@ -45,11 +45,82 @@ body {
     text-decoration: underline;
 }
 
-.header__link--active {
+a.header__link--active {
     background-color: #cbe300;
     text-decoration: none;
     color: #0c1014;
     padding: 14px;
     border-radius: 6px;
     cursor: default;
+}
+
+.main__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 62px;
+    margin: 46px 0;
+}
+
+.container {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 0 5px 15px -6px #000000;
+    display: flex;
+    border-radius: 6px;
+}
+
+.card__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+}
+
+.card__price {
+    margin-top: 0;
+}
+
+.card__price span {
+    font-size: 34px;
+}
+
+.card__list {
+    color: #b5b5b5;
+    margin: 0 0 35px;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex: 1;
+    
+}
+
+.card__list li::marker {
+    color: #cbe300;
+}
+
+.card__btn {
+    display: block;
+    background-color: #cbe300;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.card__btn:hover {
+    background-color: #1f262c;
+    color: #ffffff;
+    outline: 2px solid #cbe300;
 }
